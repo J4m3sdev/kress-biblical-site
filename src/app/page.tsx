@@ -1,6 +1,6 @@
 import Link from "next/link";
 import BookCard from "@/components/BookCard";
-import FadeIn from "@/components/FadeIn";
+
 import BackToTop from "@/components/BackToTop";
 import { featuredBooks } from "@/lib/books";
 
@@ -151,7 +151,7 @@ export default function Home() {
           &ldquo;
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <FadeIn>
+          <div>
             <blockquote>
               <p className="font-(family-name:--font-serif) text-2xl md:text-3xl text-primary leading-relaxed italic">
                 &ldquo;Be diligent to present yourself approved to God, a worker who does not need to be ashamed, rightly dividing the word of truth.&rdquo;
@@ -160,7 +160,7 @@ export default function Home() {
                 2 Timothy 2:15 (NKJV)
               </cite>
             </blockquote>
-          </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -168,7 +168,7 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-            <FadeIn direction="left">
+            <div>
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-warm-gray">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -187,9 +187,9 @@ export default function Home() {
                   <p className="text-text-light text-sm">Books Published</p>
                 </div>
               </div>
-            </FadeIn>
+            </div>
 
-            <FadeIn direction="right" delay={200}>
+            <div>
               <div>
                 <p className="text-accent font-medium tracking-widest uppercase text-sm mb-3">About Us</p>
                 <h2 className="font-(family-name:--font-serif) text-3xl md:text-4xl font-bold text-primary mb-6">
@@ -230,7 +230,7 @@ export default function Home() {
                   </svg>
                 </Link>
               </div>
-            </FadeIn>
+            </div>
           </div>
         </div>
       </section>
@@ -238,17 +238,17 @@ export default function Home() {
       {/* Why Kress */}
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
+          <div>
             <div className="text-center mb-14">
               <p className="text-accent font-medium tracking-widest uppercase text-sm mb-3">Why Choose Us</p>
               <h2 className="font-(family-name:--font-serif) text-3xl md:text-4xl font-bold text-primary">
                 Built on the Word of God
               </h2>
             </div>
-          </FadeIn>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyKressFeatures.map((feature, i) => (
-              <FadeIn key={feature.title} delay={i * 100}>
+              <div key={feature.title}>
                 <div className="bg-cream rounded-2xl p-7 text-center hover:shadow-lg transition-shadow border border-transparent hover:border-accent/20 group h-full">
                   <div className="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-colors">
                     {feature.icon}
@@ -256,7 +256,7 @@ export default function Home() {
                   <h3 className="font-(family-name:--font-serif) text-lg font-bold text-primary mb-2">{feature.title}</h3>
                   <p className="text-text-light text-sm leading-relaxed">{feature.description}</p>
                 </div>
-              </FadeIn>
+              </div>
             ))}
           </div>
         </div>
@@ -265,7 +265,7 @@ export default function Home() {
       {/* Featured Books */}
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
+          <div>
             <div className="text-center mb-14">
               <p className="text-accent font-medium tracking-widest uppercase text-sm mb-3">Latest Releases</p>
               <h2 className="font-(family-name:--font-serif) text-3xl md:text-4xl font-bold text-primary">
@@ -275,15 +275,15 @@ export default function Home() {
                 Our most recent publications, available now for pastors, students, and anyone hungry for the Word.
               </p>
             </div>
-          </FadeIn>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredBooks.map((book, i) => (
-              <FadeIn key={book.slug} delay={i * 100}>
+              <div key={book.slug}>
                 <BookCard book={book} />
-              </FadeIn>
+              </div>
             ))}
           </div>
-          <FadeIn>
+          <div>
             <div className="text-center mt-12">
               <Link
                 href="/bookstore"
@@ -295,14 +295,14 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
-          </FadeIn>
+          </div>
         </div>
       </section>
 
       {/* Authors Showcase */}
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
+          <div>
             <div className="text-center mb-14">
               <p className="text-accent font-medium tracking-widest uppercase text-sm mb-3">Our Authors</p>
               <h2 className="font-(family-name:--font-serif) text-3xl md:text-4xl font-bold text-primary">
@@ -312,10 +312,10 @@ export default function Home() {
                 Faithful pastors, professors, and scholars committed to rightly dividing the Word of truth.
               </p>
             </div>
-          </FadeIn>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {authors.map((author, i) => (
-              <FadeIn key={author.name} delay={i * 80}>
+              <div key={author.name}>
                 <div className="flex items-start gap-4 bg-cream rounded-2xl p-6 hover:shadow-md transition-shadow border border-transparent hover:border-accent/20">
                   <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shrink-0">
                     <span className="text-white font-bold font-(family-name:--font-serif) text-xl">
@@ -328,7 +328,7 @@ export default function Home() {
                     <p className="text-text-light text-sm mt-1">{author.books}</p>
                   </div>
                 </div>
-              </FadeIn>
+              </div>
             ))}
           </div>
         </div>
@@ -338,12 +338,12 @@ export default function Home() {
       <section className="py-16 bg-primary-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(201,169,110,0.1),transparent_60%)]" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <FadeIn>
+          <div>
             <p className="font-(family-name:--font-serif) text-xl md:text-2xl text-white/80 italic leading-relaxed">
               &ldquo;The biblical mandate is: Keep on reading what will open the Holy Scriptures to you more and more.&rdquo;
             </p>
             <p className="mt-4 text-accent font-semibold">Pastor John Piper</p>
-          </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -353,7 +353,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(201,169,110,0.4),transparent_60%)]" />
         </div>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <FadeIn>
+          <div>
             <svg className="w-12 h-12 mx-auto mb-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
@@ -374,7 +374,7 @@ export default function Home() {
               </button>
             </div>
             <p className="text-white/30 text-xs mt-4">No spam, ever. Unsubscribe anytime.</p>
-          </FadeIn>
+          </div>
         </div>
       </section>
     </>

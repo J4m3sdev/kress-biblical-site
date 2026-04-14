@@ -16,9 +16,13 @@ export default function FadeIn({
   direction = "up",
 }: FadeInProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    setMounted(true);
+    setVisible(false);
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -26,7 +30,7 @@ export default function FadeIn({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "50px 0px 0px 0px" }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -39,6 +43,10 @@ export default function FadeIn({
     right: "-translate-x-8",
     none: "",
   };
+
+  if (!mounted) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <div

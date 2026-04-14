@@ -1,0 +1,5 @@
+:HL["/kress-biblical-site/_next/static/chunks/0z.1fn4~kuf6s.css","style"]
+:HL["/kress-biblical-site/_next/static/media/2a65768255d6b625-s.p.14by5b4al-y~f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/kress-biblical-site/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://www.kressbiblical.com/wp-content/uploads/2024/07/Thumbnail-1-Peter.jpg?resize=600x920&ssl=1","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"bookstore","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"colossians-philemon-for-pastors","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"UXSUWAFobivZOLfHmbwMU"}

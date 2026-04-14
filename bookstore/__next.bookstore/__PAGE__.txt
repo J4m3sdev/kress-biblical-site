@@ -3,7 +3,7 @@
 3:I[64322,["/kress-biblical-site/_next/static/chunks/01gngkm7gi8z3.js","/kress-biblical-site/_next/static/chunks/0d3shmwh5_nmn.js","/kress-biblical-site/_next/static/chunks/0d8bd.wekxga-.js"],"default"]
 6:I[97367,["/kress-biblical-site/_next/static/chunks/01gngkm7gi8z3.js","/kress-biblical-site/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/kress-biblical-site/_next/static/chunks/0d8bd.wekxga-.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"UXSUWAFobivZOLfHmbwMU"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/kress-biblical-site/_next/static/chunks/0d8bd.wekxga-.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tqHYT2WeYKUpllESDbMbN"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
